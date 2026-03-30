@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light" data-lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aleksandra Sędziak — Portfolio Akademickie</title>
+  <meta name="description" content="Portfolio akademickie — badaczka, wykładowczyni, ekspertka." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <span class="nav-logo" data-pl="A. Sędziak" data-en="A. Sędziak">A. Sędziak</span>
+      <div class="nav-controls">
+        <button id="lang-toggle" class="ctrl-btn" aria-label="Zmień język">
+          <span class="lang-label" data-pl="EN" data-en="PL">EN</span>
+        </button>
+        <button id="theme-toggle" class="ctrl-btn" aria-label="Zmień motyw">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-frame">
+            <!-- Zastąp src="photo.jpg" swoim zdjęciem -->
+            <img src="photo.jpg" alt="Aleksandra Sędziak" class="hero-photo" id="hero-img"
+                 onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';" />
+            <div class="photo-placeholder" id="photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="32" r="16" stroke="currentColor" stroke-width="1.5"/><path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span data-pl="Twoje zdjęcie" data-en="Your photo">Twoje zdjęcie</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-text">
+          <p class="hero-pretitle" data-pl="dr / dr hab." data-en="PhD / Habil.">dr / dr hab.</p>
+          <h1 class="hero-name">Aleksandra<br/>Sędziak</h1>
+          <p class="hero-role" data-pl="[Twoje stanowisko / afiliacja]" data-en="[Your position / affiliation]">[Twoje stanowisko / afiliacja]</p>
+          <p class="hero-tagline" data-pl="[Krótki opis specjalizacji — jedno zdanie]" data-en="[Short description of your specialisation — one sentence]">[Krótki opis specjalizacji — jedno zdanie]</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              <span data-pl="Kontakt" data-en="Contact">Kontakt</span>
+            </a>
+            <a href="cv.pdf" class="btn btn-outline" download>
+              <span data-pl="Pobierz CV" data-en="Download CV">Pobierz CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span data-pl="przewiń" data-en="scroll">przewiń</span>
+        <svg viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 4v12M4 12l4 4 4-4"/></svg>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-pl="O mnie" data-en="About">O mnie</span>
+        </h2>
+        <div class="about-grid">
+          <div class="about-bio">
+            <p data-pl="[Wprowadź swój biogram — 2–3 akapity opisujące Twoje zainteresowania badawcze, dorobek i aktywność naukową.]" data-en="[Insert your bio — 2–3 paragraphs describing your research interests, achievements and academic activities.]">
+              [Wprowadź swój biogram — 2–3 akapity opisujące Twoje zainteresowania badawcze, dorobek i aktywność naukową.]
+            </p>
+          </div>
+          <div class="about-meta">
+            <div class="meta-block">
+              <h3 data-pl="Afiliacja" data-en="Affiliation">Afiliacja</h3>
+              <p data-pl="[Nazwa uczelni / instytutu]" data-en="[University / Institute name]">[Nazwa uczelni / instytutu]</p>
+            </div>
+            <div class="meta-block">
+              <h3 data-pl="Zainteresowania badawcze" data-en="Research Interests">Zainteresowania badawcze</h3>
+              <ul class="tag-list">
+                <li data-pl="[Obszar 1]" data-en="[Area 1]">[Obszar 1]</li>
+                <li data-pl="[Obszar 2]" data-en="[Area 2]">[Obszar 2]</li>
+                <li data-pl="[Obszar 3]" data-en="[Area 3]">[Obszar 3]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── RESEARCH / PUBLICATIONS ─── -->
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-pl="Publikacje i badania" data-en="Publications & Research">Publikacje i badania</span>
+        </h2>
+        <div class="pub-list">
+
+          <!-- Publikacja 1 -->
+          <article class="pub-item">
+            <span class="pub-year">2024</span>
+            <div class="pub-content">
+              <h3 class="pub-title" data-pl="[Tytuł publikacji / projektu]" data-en="[Publication / project title]">[Tytuł publikacji / projektu]</h3>
+              <p class="pub-meta" data-pl="[Czasopismo / Wydawnictwo · doi lub link]" data-en="[Journal / Publisher · doi or link]">[Czasopismo / Wydawnictwo · doi lub link]</p>
+            </div>
+          </article>
+
+          <!-- Publikacja 2 -->
+          <article class="pub-item">
+            <span class="pub-year">2023</span>
+            <div class="pub-content">
+              <h3 class="pub-title" data-pl="[Tytuł publikacji / projektu]" data-en="[Publication / project title]">[Tytuł publikacji / projektu]</h3>
+              <p class="pub-meta" data-pl="[Czasopismo / Wydawnictwo · doi lub link]" data-en="[Journal / Publisher · doi or link]">[Czasopismo / Wydawnictwo · doi lub link]</p>
+            </div>
+          </article>
+
+          <!-- Publikacja 3 -->
+          <article class="pub-item">
+            <span class="pub-year">2022</span>
+            <div class="pub-content">
+              <h3 class="pub-title" data-pl="[Tytuł publikacji / projektu]" data-en="[Publication / project title]">[Tytuł publikacji / projektu]</h3>
+              <p class="pub-meta" data-pl="[Czasopismo / Wydawnictwo · doi lub link]" data-en="[Journal / Publisher · doi or link]">[Czasopismo / Wydawnictwo · doi lub link]</p>
+            </div>
+          </article>
+
+        </div>
+        <div class="pub-more">
+          <a href="#" class="btn btn-outline">
+            <span data-pl="Pełna lista publikacji →" data-en="Full publication list →">Pełna lista publikacji →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TEACHING ─── -->
+    <section class="section" id="teaching">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-pl="Dydaktyka" data-en="Teaching">Dydaktyka</span>
+        </h2>
+        <div class="courses-grid">
+
+          <div class="course-card">
+            <span class="course-level" data-pl="studia licencjackie" data-en="undergraduate">studia licencjackie</span>
+            <h3 data-pl="[Nazwa przedmiotu]" data-en="[Course name]">[Nazwa przedmiotu]</h3>
+            <p data-pl="[Krótki opis]" data-en="[Short description]">[Krótki opis]</p>
+          </div>
+
+          <div class="course-card">
+            <span class="course-level" data-pl="studia magisterskie" data-en="graduate">studia magisterskie</span>
+            <h3 data-pl="[Nazwa przedmiotu]" data-en="[Course name]">[Nazwa przedmiotu]</h3>
+            <p data-pl="[Krótki opis]" data-en="[Short description]">[Krótki opis]</p>
+          </div>
+
+          <div class="course-card">
+            <span class="course-level" data-pl="seminarium" data-en="seminar">seminarium</span>
+            <h3 data-pl="[Nazwa przedmiotu]" data-en="[Course name]">[Nazwa przedmiotu]</h3>
+            <p data-pl="[Krótki opis]" data-en="[Short description]">[Krótki opis]</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-pl="Kontakt" data-en="Contact">Kontakt</span>
+        </h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:adres@uczelnia.pl">adres@uczelnia.pl</a>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-pl="[Instytut / Wydział, ul. Adresowa 1, Miasto]" data-en="[Institute / Faculty, 1 Address St., City]">[Instytut / Wydział, ul. Adresowa 1, Miasto]</span>
+            </div>
+          </div>
+          <div class="contact-links">
+            <a href="https://orcid.org/0000-0000-0000-0000" class="social-link" target="_blank" rel="noopener">
+              <span class="social-icon orcid">iD</span>
+              <span>ORCID</span>
+            </a>
+            <a href="https://scholar.google.com/" class="social-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+              <span>Google Scholar</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aleksandra-sędziak/" class="social-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://researchgate.net/" class="social-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0H4.414A4.414 4.414 0 0 0 0 4.414v15.172A4.414 4.414 0 0 0 4.414 24h15.172A4.414 4.414 0 0 0 24 19.586V4.414A4.414 4.414 0 0 0 19.586 0zm-6.16 17.116h-2.536v-7.2h2.536v7.2zm-1.268-8.192a1.472 1.472 0 1 1 0-2.944 1.472 1.472 0 0 1 0 2.944zm10.026 8.192h-2.536v-3.498c0-.835-.015-1.909-1.163-1.909-1.165 0-1.343.91-1.343 1.849v3.558h-2.536v-7.2h2.434v.984h.034c.338-.641 1.165-1.317 2.399-1.317 2.566 0 3.039 1.688 3.039 3.882v3.651z"/></svg>
+              <span>ResearchGate</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aleksandra Sędziak</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
